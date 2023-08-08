@@ -9,3 +9,30 @@
     font-weight: lighter;
     text-shadow: black 1px 1px 5px;
 }
+
+.font-cursive-quote{
+    font-family: 'Pacifico', cursive;
+    font-weight: lighter;
+}
+
+::-webkit-scrollbar {
+    width: 7px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #eee1d1; /* Set the color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f37761; /* Set the color of the scrollbar thumb */
+    border-radius: 5px; /* Set the border radius of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f36c54; /* Set the color of the scrollbar thumb */
+    border-radius: 5px; /* Set the border radius of the thumb */
+}
+
+*{
+    -webkit-tap-highlight-color: transparent;
+}

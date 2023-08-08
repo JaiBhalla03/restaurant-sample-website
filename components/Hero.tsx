@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-import heroImage from '../images/heroImage.png'
+import heroImage from '../images/heroImage3.png'
 import Navbar from "@/components/Navbar";
 
 const Hero = () => {
