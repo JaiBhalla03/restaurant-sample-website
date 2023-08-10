@@ -36,3 +36,20 @@
 *{
     -webkit-tap-highlight-color: transparent;
 }
+
+
+.swiper {
+    width: 40em;
+    height: 100%;
+}
+
+.swiper-slide {
+    background: #285f58;
+    border-bottom-right-radius: 3em;
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
