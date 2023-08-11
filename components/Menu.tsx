@@ -10,8 +10,8 @@ const Menu = () => {
                 Menu that our customers<br/>
                 <div className={'relative'}>
                     Loved the most.
-                    <svg className={'absolute'} width="380" height="17" viewBox="0 0 477 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 16C53.6667 8.59354 190.2 -4.30682 315 3.34339C439.8 10.9936 474.333 14.9687 476 16" stroke="#e85731" stroke-width={"3"}/>
+                    <svg className={'hidden lg:block absolute'} width="380" height="17" viewBox="0 0 477 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 16C53.6667 8.59354 190.2 -4.30682 315 3.34339C439.8 10.9936 474.333 14.9687 476 16" stroke="#e85731" strokeWidth={"3"}/>
                     </svg>
                 </div>
                 <div className={'text-sm mt-10 mx-48'}>
@@ -23,8 +23,8 @@ const Menu = () => {
                 <div className={'flex gap-2'}>
                     <div className={'relative'}>
                         Choose The Taste
-                        <svg className={'absolute'} width="420" height="17" viewBox="0 0 477 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 16C53.6667 8.59354 190.2 -4.30682 315 3.34339C439.8 10.9936 474.333 14.9687 476 16" stroke="#e85731" stroke-width={"3"}/>
+                        <svg className={'hidden lg:block absolute'} width="420" height="17" viewBox="0 0 477 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 16C53.6667 8.59354 190.2 -4.30682 315 3.34339C439.8 10.9936 474.333 14.9687 476 16" stroke="#e85731" strokeWidth={"3"}/>
                         </svg>
                     </div>
                     <div>
@@ -42,8 +42,8 @@ const Menu = () => {
                     <div>We served</div>
                     <div className={'relative'}>
                         Healthy Food
-                        <svg className={'absolute'} width="300" height="17" viewBox="0 0 477 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 16C53.6667 8.59354 190.2 -4.30682 315 3.34339C439.8 10.9936 474.333 14.9687 476 16" stroke="#e85731" stroke-width={"3"}/>
+                        <svg className={'hidden lg:block absolute'} width="300" height="17" viewBox="0 0 477 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 16C53.6667 8.59354 190.2 -4.30682 315 3.34339C439.8 10.9936 474.333 14.9687 476 16" stroke="#e85731" strokeWidth={"3"}/>
                         </svg>
                     </div>
                 </div>

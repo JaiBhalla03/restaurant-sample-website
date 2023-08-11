@@ -7,6 +7,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import clsx from 'clsx';
+
 
 
 // import required modules
@@ -53,19 +55,6 @@ const FeedBackBox = () => {
         },
     ];
 
-    const renderStars = (rating) => {
-        const stars = [];
-        for (let i = 0; i < 5; i++) {
-            if(i<rating){
-                stars.push(<AiFillStar key={i} size={20} className="text-[#f37761]" />);
-            }
-            else{
-                stars.push(<AiFillStar key={i} size={20} className="text-white" />);
-            }
-        }
-        return stars;
-    };
-
     return (
         <div className={'flex items-center justify-center py-20 overflow-hidden'}>
             <div className={'h-80'}>
@@ -85,9 +74,9 @@ const FeedBackBox = () => {
                 >
                     {
                         comments.map((comment, index)=>(
-                            <SwiperSlide>
-                                <div className={'relative text-white m-5'}>
-                                    <div className={'absolute w-12 h-12 rounded-full right-0 overflow-hidden'}>
+                            <SwiperSlide key={index}>
+                                <div className={'relative m-5'}>
+                                    <div className={'text-white absolute w-12 h-12 rounded-full right-0 overflow-hidden'}>
                                         <Image src={comment.imageSrc} alt={''} className={'h-full object-cover rounded-full'}/>
                                     </div>
                                     <div className={'relative text-[#285f58] text-4xl font-bold'}>
@@ -95,16 +84,18 @@ const FeedBackBox = () => {
                                             "
                                         </div>
                                     </div>
-                                    <div className={'flex flex-col gap-4 text-lg font-normal top-10 absolute z-10 px-14 py-5'}>
+                                    <div className={'text-white flex flex-col gap-4 text-lg font-normal top-10 absolute z-10 px-14 py-5'}>
                                         <div>
                                             {comment.comment}
                                         </div>
-                                        <div className={'flex justify-between'}>
+                                        <div className={'text-white flex justify-between'}>
                                             <div className={'font-semibold'}>
                                                 {comment.name} -<i className={'not-italic text-sm'}>Loyal Customer</i>
                                             </div>
                                             <div className={'flex items-center gap-1'}>
-                                                {renderStars(comment.rating)}
+                                                {Array.from({length:comment.rating}, (_, index)=>(
+                                                    <AiFillStar size={20} key={index} className={'text-[#f37761]'}/>
+                                                ))}
                                             </div>
                                         </div>
                                     </div>

@@ -41,13 +41,13 @@ const MenuCards = () => {
         setActiveCard(newLen);
     };
     return (
-        <div className={'h-screen pt-20 px-32'}>
-            <div className={'flex justify-between px-20'}>
+        <div className={'h-screen pt-20 px-10 lg:px-32'}>
+            <div className={'flex flex-col lg:flex-row justify-between px-20'}>
                 <div className={'relative'}>
                     {
                         menuItem.map((item, index)=>(
                             <div key={index}
-                                 className={`${activeCard === index ? 'opacity-1 scale-100' : 'opacity-0 scale-50'} text-[#285f58] flex flex-col items-center justify-center gap-4 transform duration-500 h-96 w-96 absolute`}
+                                 className={`${activeCard === index ? 'opacity-1 scale-100' : 'opacity-0 scale-50'} text-[#285f58] flex flex-col items-center justify-center gap-4 transform duration-500 h-48 w-48 lg:h-96 lg:w-96 absolute`}
                             >
                                 <Image src={item.imageSrc} alt={item.title}/>
                                 <div className={'text-xl font-bold'}>{item.title}</div>
@@ -59,7 +59,7 @@ const MenuCards = () => {
                 <div className={'flex flex-col gap-4 text-[#285f58]'}>
                     {
                         menuItem.map((item, index)=>(
-                            <div onClick={()=>handleClick(index)} className={`group hover:bg-[#e8512a] hover:text-white transform duration-300 cursor-pointer rounded-l-full ${activeCard === index ? 'bg-[#e8512a] text-white' : 'bg-[#d6c7b6] text-[#285f58]'}  w-full flex gap-2 p-1`}>
+                            <div key={index} onClick={()=>handleClick(index)} className={`group hover:bg-[#e8512a] hover:text-white transform duration-300 cursor-pointer rounded-l-full ${activeCard === index ? 'bg-[#e8512a] text-white' : 'bg-[#d6c7b6] text-[#285f58]'}  w-full flex gap-2 p-1`}>
                                 <div className={'flex items-center justify-center p-2 h-20 max-fit rounded-full'}>
                                     <Image src={item.imageSrc} alt={item.title} className={'w-24 rounded-full'}/>
                                 </div>

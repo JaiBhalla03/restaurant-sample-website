@@ -1,11 +1,18 @@
-'use client'
+'use client';
 
-import React, {useEffect, useState} from 'react';
-import {AiFillFacebook, AiFillInstagram, AiFillTwitterCircle, AiOutlineTwitter} from "react-icons/ai";
-
+import React, { useEffect, useState } from 'react';
+import {
+    AiFillFacebook,
+    AiFillInstagram,
+    AiFillTwitterCircle,
+    AiOutlineClose,
+    AiOutlineMenu,
+    AiOutlineTwitter
+} from "react-icons/ai";
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -18,27 +25,49 @@ const Navbar = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const toggleMobileMenu = () => {
+        setMobileMenuOpen(!mobileMenuOpen);
+    };
+
     return (
-        <nav className={`bg-opacity-50 backdrop-blur-sm fixed ${scrolled ? 'bg-white text-[#285f58] font-bold' : 'font-thin bg-transparent text-white'} transform duration-500 z-20 w-full px-8 py-4`}>
-            <div className={'w-full flex justify-between'}>
-                <div className={'flex flex-1 items-center justify-center gap-10 text-xs list-none'}>
-                    <li className={'hover:-translate-y-0.5 transform duration-300 cursor-pointer'}>Home</li>
-                    <li className={'hover:-translate-y-0.5 transform duration-300 cursor-pointer'}>Menu</li>
-                    <li className={'hover:-translate-y-0.5 transform duration-300 cursor-pointer'}>Our Services</li>
-                    <li className={'hover:-translate-y-0.5 transform duration-300 cursor-pointer'}>About</li>
+        <nav className={`bg-opacity-50 backdrop-blur-sm fixed ${scrolled ? 'bg-white text-[#285f58]' : 'bg-transparent text-white'} transform duration-500 z-20 w-full px-4 md:px-8 lg:px-2 xl:px-8 py-4`}>
+            <div className="w-full flex flex-wrap justify-between items-center">
+                <div className="hidden md:flex flex-1 items-center justify-center gap-4 text-xs list-none">
+                    {!mobileMenuOpen && (
+                        <>
+                            <a href="#" className={`${scrolled ? 'font-bold' : 'font-thin'} hover:-translate-y-0.5 transform duration-300 cursor-pointer`}>Home</a>
+                            <a href="#" className={`${scrolled ? 'font-bold' : 'font-thin'} hover:-translate-y-0.5 transform duration-300 cursor-pointer`}>Menu</a>
+                            <a href="#" className={`${scrolled ? 'font-bold' : 'font-thin'} hover:-translate-y-0.5 transform duration-300 cursor-pointer`}>Our Services</a>
+                            <a href="#" className={`${scrolled ? 'font-bold' : 'font-thin'} hover:-translate-y-0.5 transform duration-300 cursor-pointer`}>About</a>
+                        </>
+                    )}
                 </div>
-                <div className={'items-center font-bold text-lg flex flex-1 justify-center'}>
-                    Res<i className={'not-italic text-[#e8512a]'}>taur</i>ant
+                <div className="items-center font-bold text-lg flex flex-1 md:justify-center">
+                    Res<i className="not-italic text-[#e8512a]">taur</i>ant
                 </div>
-                <div className={'flex flex-1 justify-center items-center gap-16'}>
-                    <div className={'flex items-center text-3xl gap-4'}>
-                        <AiFillInstagram className={`hover:scale-110 cursor-pointer transform duration-300 p-1 border ${scrolled ? 'hover:bg-gray-200 border-[#285f58]' : 'hover:bg-[#285f58] border-white'} rounded-full`}/>
-                        <AiFillFacebook className={`hover:scale-110 cursor-pointer transform duration-300 p-1 border ${scrolled ? 'hover:bg-gray-200 border-[#285f58]' : 'hover:bg-[#285f58] border-white'} rounded-full`}/>
-                        <AiOutlineTwitter className={`hover:scale-110 cursor-pointer transform duration-300 p-1 border ${scrolled ? 'hover:bg-gray-200 border-[#285f58]' : 'hover:bg-[#285f58] border-white'} rounded-full`}/>
+                <div className="flex flex-1 justify-end md:justify-center items-center gap-8">
+                    <div className={`hidden md:flex items-center text-2xl gap-4 ${scrolled ? 'text-[#285f58]' : 'text-white'}`}>
+                        <AiFillInstagram className={`hover:scale-110 cursor-pointer transform duration-300 p-1 border ${scrolled ? 'hover:bg-gray-200 border-[#285f58]' : 'hover:bg-[#285f58] border-white'} rounded-full`} />
+                        <AiFillFacebook className={`hover:scale-110 cursor-pointer transform duration-300 p-1 border ${scrolled ? 'hover:bg-gray-200 border-[#285f58]' : 'hover:bg-[#285f58] border-white'} rounded-full`} />
+                        <AiOutlineTwitter className={`hover:scale-110 cursor-pointer transform duration-300 p-1 border ${scrolled ? 'hover:bg-gray-200 border-[#285f58]' : 'hover:bg-[#285f58] border-white'} rounded-full`} />
                     </div>
-                    <div className={'flex items-center justify-center font-normal px-3 py-2 w-32 hover:font-bold bg-white hover:bg-[#285f58] hover:text-white transform duration-300 cursor-pointer text-[#285f58] text-sm rounded-bl-xl rounded-tr-xl rounded-tl-sm rounded-br-sm'}>
-                        Make an order
+                    <div onClick={toggleMobileMenu} className={`flex justify-end md:hidden text-xl cursor-pointer ${scrolled ? 'text-[#285f58] hover:font-bold' : 'text-white hover:font-bold'}`}>
+                        {mobileMenuOpen ? (<AiOutlineClose/>) : (<AiOutlineMenu/>)}
                     </div>
+                    {mobileMenuOpen ? (
+                        <div className={`flex flex-col absolute top-full left-0 bg-white w-full text-[#285f58] text-sm border-t border-[#285f58] z-10`}>
+                            <a href="#" className="py-2 px-4 hover:bg-[#285f58] hover:text-white">Home</a>
+                            <a href="#" className="py-2 px-4 hover:bg-[#285f58] hover:text-white">Menu</a>
+                            <a href="#" className="py-2 px-4 hover:bg-[#285f58] hover:text-white">Our Services</a>
+                            <a href="#" className="py-2 px-4 hover:bg-[#285f58] hover:text-white">About</a>
+                            <div className={`flex items-center text-2xl gap-4 text-[#285f58]`}>
+                                <AiFillInstagram className={`hover:scale-110 cursor-pointer transform duration-300 p-1 border hover:bg-gray-200 border-[#285f58] rounded-full`} />
+                                <AiFillFacebook className={`hover:scale-110 cursor-pointer transform duration-300 p-1 border hover:bg-gray-200 border-[#285f58] rounded-full`} />
+                                <AiOutlineTwitter className={`hover:scale-110 cursor-pointer transform duration-300 p-1 border hover:bg-gray-200 border-[#285f58] rounded-full`} />
+                            </div>
+                        </div>
+                    ) : (<></>)}
                 </div>
             </div>
         </nav>

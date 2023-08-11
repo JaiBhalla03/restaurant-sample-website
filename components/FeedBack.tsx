@@ -9,8 +9,8 @@ const FeedBack = () => {
                     <div>What Our</div>
                     <div className={'relative'}>
                         Happy Customers
-                        <svg className={'absolute'} width="420" height="17" viewBox="0 0 477 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 16C53.6667 8.59354 190.2 -4.30682 315 3.34339C439.8 10.9936 474.333 14.9687 476 16" stroke="#e85731" stroke-width={"3"}/>
+                        <svg className={'hidden lg:block absolute'} width="420" height="17" viewBox="0 0 477 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 16C53.6667 8.59354 190.2 -4.30682 315 3.34339C439.8 10.9936 474.333 14.9687 476 16" stroke="#e85731" strokeWidth={"3"}/>
                         </svg>
                     </div>
                 </div>

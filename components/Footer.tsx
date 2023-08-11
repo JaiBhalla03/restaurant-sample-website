@@ -15,7 +15,7 @@ const Footer = () => {
                     <path d="M0 100l48-12C96 76 192 28 288 23.5 384 19 480 57 576 57.5c96 .5 192-38.5 288-33C960 29 1056 79 1152 83.5 1248 88 1344 48 1392 28l48-20V0H0z" />
                 </svg>
             </div>
-            <div className={'flex gap-32 justify-center items-center pb-10 mx-32 border-b border-white'}>
+            <div className={'flex flex-col lg:flex-row gap-32 justify-center items-center pb-10 mx-2 lg:mx-32 border-b border-white'}>
                 <div className={'text-white font-semibold text-6xl pt-32 z-10'}>
                     <div>
                         Enjoy Delicious Food

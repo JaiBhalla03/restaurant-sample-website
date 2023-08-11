@@ -3,8 +3,8 @@ import MenuCard from "@/components/MenuCard";
 
 const MenuCardsSecond = () => {
     return (
-        <div className={'px-48 py-20'}>
-            <div className={'flex justify-center gap-4'}>
+        <div className={'px-10 lg:px-48 py-20'}>
+            <div className={'flex flex-col lg:flex-row justify-center gap-4'}>
                 <MenuCard direction={''}/>
                 <MenuCard direction={'-'}/>
                 <MenuCard direction={''}/>

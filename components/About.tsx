@@ -29,8 +29,8 @@ const About = () => {
                 <div className={'flex gap-2'}>
                     <div className={'relative'}>
                         Combination
-                        <svg className={'absolute'} width="300" height="28" viewBox="0 0 251 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 27C75.4 -5 198 7 250 27" stroke="#e85731" stroke-width={"3"}/>
+                        <svg className={'hidden lg:block absolute'} width="300" height="28" viewBox="0 0 251 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 27C75.4 -5 198 7 250 27" stroke="#e85731" strokeWidth={"3"}/>
                         </svg>
                     </div>
                     for You
