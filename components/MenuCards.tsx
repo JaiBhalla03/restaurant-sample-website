@@ -26,7 +26,7 @@ const MenuCards = () => {
         },
     ]
 
-    const handleClick = (cardIndex) =>{
+    const handleClick = (cardIndex: number) =>{
         setActiveCard(cardIndex);
     }
     const shiftRight = () => {

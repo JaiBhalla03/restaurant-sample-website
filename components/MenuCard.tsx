@@ -2,7 +2,12 @@
 import React from 'react';
 import Image from "next/image";
 import image1 from '../images/menuImage1.jpg';
-const MenuCard = ({direction}) => {
+
+interface MenuCardProp  {
+    direction: string;
+}
+
+const MenuCard : React.FC<MenuCardProp> = ({direction}) => {
     return (
         <div className={'flex flex-col gap-4 w-96 p-4'}>
             <Image src={image1} alt={'the'} className={`transform ${direction}rotate-[2deg]`}/>
