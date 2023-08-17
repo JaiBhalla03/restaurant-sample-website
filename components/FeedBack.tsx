@@ -4,8 +4,8 @@ import FeedBackBox from "@/components/FeedBackBox";
 const FeedBack = () => {
     return (
         <div className={'bg-[#eee1d1]'}>
-            <div className={'mx-48 text-center text-5xl flex flex-col gap-2 items-center justify-center font-semibold text-[#285f58]'}>
-                <div className={'flex gap-2'}>
+            <div className={'mx-2 lg:mx-48 text-center text-5xl flex flex-col gap-2 items-center justify-center font-semibold text-[#285f58]'}>
+                <div className={'flex flex-col lg:flex-row gap-2'}>
                     <div>What Our</div>
                     <div className={'relative'}>
                         Happy Customers
@@ -15,7 +15,7 @@ const FeedBack = () => {
                     </div>
                 </div>
                 <div>Talk About Us</div>
-                <div className={'text-sm mt-6 mx-48'}>
+                <div className={'text-sm mt-6 mx-2 lg:mx-48'}>
                     Our food is made of the freshest ingredients and the result is a much better sushi with a fresh look and of course great taste guarantee.
                 </div>
             </div>

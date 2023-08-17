@@ -60,10 +60,12 @@ const comments : Comment[] = [
     },
 ];
 
+// ... (import statements)
+
 const FeedBackBox: React.FC = () => {
     return (
-        <div className={'flex items-center justify-center py-20 overflow-hidden'}>
-            <div className={'h-80'}>
+        <div className={'flex items-center justify-center py-10 md:py-20 overflow-hidden'}>
+            <div className={'h-screen md:h-80'}>
                 <Swiper
                     spaceBetween={50}
                     effect="fade"
@@ -74,27 +76,22 @@ const FeedBackBox: React.FC = () => {
                     className="mySwiper"
                 >
                     {comments.map((comment, index) => (
-                        <SwiperSlide key={index}>
+                        <SwiperSlide key={index} className={''}>
                             <div className={'relative m-5'}>
                                 <div className={'text-white absolute w-12 h-12 rounded-full right-0 overflow-hidden'}>
                                     <Image src={comment.imageSrc} alt={''} className={'h-full object-cover rounded-full'} />
                                 </div>
-                                <div className={'relative text-[#285f58] text-4xl font-bold'}>
-                                    <div className={'top-4 -left-30 flex items-center justify-center absolute font-cursive-quote bg-[#f37761] text-[#eee1d1] flex justify-center items-center rounded-full px-4 pt-8 pb-4 h-20 w-20 text-5xl pt-4'}>
+                                <div className={'relative text-[#285f58] text-xl md:text-4xl font-bold'}>
+                                    <div className={'top-4 -left-10 md:-left-30 flex items-center justify-center absolute font-cursive-quote bg-[#f37761] text-[#eee1d1] flex justify-center items-center rounded-full px-4 pt-8 pb-4 h-14 w-14 md:h-20 md:w-20 text-xl md:text-5xl pt-4'}>
                                         "
                                     </div>
                                 </div>
-                                <div className={'text-white flex flex-col gap-4 text-lg font-normal top-10 absolute z-10 px-14 py-5'}>
+                                <div className={'text-white flex flex-col gap-2 md:gap-4 text-sm md:text-lg font-normal top-7 md:top-10 absolute z-10 px-6 md:px-14 py-2 md:py-5'}>
                                     <div>{comment.comment}</div>
                                     <div className={'text-white flex justify-between'}>
                                         <div className={'font-semibold'}>
-                                            {comment.name} -<i className={'not-italic text-sm'}>Loyal Customer</i>
+                                            {comment.name} -<i className={'not-italic text-xs md:text-sm'}>Loyal Customer</i>
                                         </div>
-                                        {/*<div className={'flex items-center gap-1'}>*/}
-                                        {/*    {Array.from({ length: comment.rating }, (_, index) => (*/}
-                                        {/*        <AiFillStar size={20} key={index} className={'text-[#f37761]'} />*/}
-                                        {/*    ))}*/}
-                                        {/*</div>*/}
                                     </div>
                                 </div>
                             </div>
@@ -107,3 +104,5 @@ const FeedBackBox: React.FC = () => {
 };
 
 export default FeedBackBox;
+
+

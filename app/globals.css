@@ -38,6 +38,7 @@
 }
 
 
+/* Default style for screens wider than 640px */
 .swiper {
     width: 40em;
     height: 100%;
@@ -54,3 +55,13 @@
     align-items: center;
 }
 
+/* Media query for screens up to 640px (typical mobile width) */
+@media (max-width: 640px) {
+    .swiper {
+        width: 100%; /* Set width to 100% for mobile screens */
+    }
+}
+
+/**{*/
+/*    border: solid red 1px;*/
+/*}*/

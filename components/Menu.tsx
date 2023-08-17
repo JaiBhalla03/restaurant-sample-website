@@ -6,7 +6,7 @@ import Image from 'next/image';
 const Menu = () => {
     return (
         <div className={'bg-[#eee1d1]'}>
-            <div className={'mx-48 text-center pt-20 text-5xl flex flex-col items-center justify-center font-semibold text-[#285f58]'}>
+            <div className={'mx-2 lg:mx-48 text-center pt-20 text-3xl lg:text-5xl flex flex-col items-center justify-center font-semibold text-[#285f58]'}>
                 Menu that our customers<br/>
                 <div className={'relative'}>
                     Loved the most.
@@ -14,12 +14,12 @@ const Menu = () => {
                         <path d="M1 16C53.6667 8.59354 190.2 -4.30682 315 3.34339C439.8 10.9936 474.333 14.9687 476 16" stroke="#e85731" strokeWidth={"3"}/>
                     </svg>
                 </div>
-                <div className={'text-sm mt-10 mx-48'}>
+                <div className={'text-sm mt-10 mx-2 lg:mx-48'}>
                     Our food is made of the freshest ingredients and the result is a much better sushi with a fresh look and of course great taste guarantee.
                 </div>
             </div>
             <MenuCards/>
-            <div className={'mx-48 text-center text-5xl flex flex-col gap-2 items-center justify-center font-semibold text-[#285f58]'}>
+            <div className={'mx-2 lg:mx-48 text-center text-3xl lg:text-5xl flex flex-col gap-2 items-center justify-center font-semibold text-[#285f58]'}>
                 <div className={'flex gap-2'}>
                     <div className={'relative'}>
                         Choose The Taste
@@ -32,7 +32,7 @@ const Menu = () => {
                     </div>
                 </div>
                 <div>Suit with your tongue</div>
-                <div className={'text-sm mt-6 mx-48'}>
+                <div className={'text-sm mt-6 mx-2 lg:mx-48'}>
                     Our food is made of the freshest ingredients and the result is a much better sushi with a fresh look and of course great taste guarantee.
                 </div>
             </div>

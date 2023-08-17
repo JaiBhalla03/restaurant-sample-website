@@ -9,7 +9,7 @@ interface MenuCardProp  {
 
 const MenuCard : React.FC<MenuCardProp> = ({direction}) => {
     return (
-        <div className={'flex flex-col gap-4 w-96 p-4'}>
+        <div className={'flex flex-col gap-4 w-72 lg:w-96 p-4'}>
             <Image src={image1} alt={'the'} className={`transform ${direction}rotate-[2deg]`}/>
             <div className={'flex flex-col gap-2 text-[#285f58]'}>
                 <div className={'font-bold text-2xl'}>Original Roll</div>

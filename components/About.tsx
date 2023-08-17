@@ -39,7 +39,7 @@ const About = () => {
                     Our food is made of the freshest ingredients and the result is a much better sushi with a fresh look and of course great taste guarantee.
                 </div>
             </div>
-            <div className={'my-10 flex flex-col gap-2 items-center lg:flex-row justify-center lg:gap-8 mx-32'}>
+            <div className={'my-10 flex flex-col gap-2 items-center lg:flex-row justify-center lg:gap-8 mx-0 lg:mx-32'}>
                 <AboutCard/>
                 <AboutCard/>
                 <AboutCard/>

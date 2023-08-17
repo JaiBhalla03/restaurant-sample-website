@@ -41,22 +41,22 @@ const MenuCards = () => {
         setActiveCard(newLen);
     };
     return (
-        <div className={'h-screen pt-20 px-10 lg:px-32'}>
+        <div className={'h-screen pt-10 lg:pt-20 px-2 lg:px-10 lg:px-32'}>
             <div className={'flex flex-col lg:flex-row justify-between px-20'}>
                 <div className={'relative'}>
                     {
                         menuItem.map((item, index)=>(
                             <div key={index}
-                                 className={`${activeCard === index ? 'opacity-1 scale-100' : 'opacity-0 scale-50'} text-[#285f58] flex flex-col items-center justify-center gap-4 transform duration-500 h-48 w-48 lg:h-96 lg:w-96 absolute`}
+                                 className={`${activeCard === index ? 'opacity-1 scale-100' : 'opacity-0 scale-50'} text-[#285f58] flex flex-col items-center justify-center gap-4 transform duration-500 h-72 w-72 lg:h-96 lg:w-96 absolute left-1/2 lg:left-0 -translate-x-1/2 lg:-translate-x-0`}
                             >
                                 <Image src={item.imageSrc} alt={item.title}/>
-                                <div className={'text-xl font-bold'}>{item.title}</div>
-                                <div className={'text-sm font-semibold'}>{item.description}</div>
+                                <div className={'hidden lg:block text-xl font-bold'}>{item.title}</div>
+                                <div className={'hidden lg:block text-sm font-semibold'}>{item.description}</div>
                             </div>
                         ))
                     }
                 </div>
-                <div className={'flex flex-col gap-4 text-[#285f58]'}>
+                <div className={'pt-64 lg:pt-0 flex flex-col gap-2 lg:gap-4 text-[#285f58]'}>
                     {
                         menuItem.map((item, index)=>(
                             <div key={index} onClick={()=>handleClick(index)} className={`group hover:bg-[#e8512a] hover:text-white transform duration-300 cursor-pointer rounded-l-full ${activeCard === index ? 'bg-[#e8512a] text-white' : 'bg-[#d6c7b6] text-[#285f58]'}  w-full flex gap-2 p-1`}>
@@ -77,7 +77,7 @@ const MenuCards = () => {
                             </div>
                         ))
                     }
-                    <div className={'flex w-full justify-center gap-4 pt-6'}>
+                    <div className={'hidden md:flex w-full justify-center gap-4 pt-6'}>
                         <div className={'p-2 bg-[#d6c7b6] text-[#e8512a] hover:bg-[#e8512a] hover:text-white transform duration-300 cursor-pointer rounded-full'} onClick={shiftLeft}>
                             <AiOutlineLeft size={25}/>
                         </div>
