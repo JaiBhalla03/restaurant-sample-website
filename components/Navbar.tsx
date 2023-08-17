@@ -56,12 +56,12 @@ const Navbar = () => {
                         {mobileMenuOpen ? (<AiOutlineClose/>) : (<AiOutlineMenu/>)}
                     </div>
                     {mobileMenuOpen ? (
-                        <div className={`flex flex-col absolute top-full left-0 bg-white w-full text-[#285f58] text-sm border-t border-[#285f58] z-10`}>
-                            <a href="#" className="py-2 px-4 hover:bg-[#285f58] hover:text-white">Home</a>
-                            <a href="#" className="py-2 px-4 hover:bg-[#285f58] hover:text-white">Menu</a>
-                            <a href="#" className="py-2 px-4 hover:bg-[#285f58] hover:text-white">Our Services</a>
-                            <a href="#" className="py-2 px-4 hover:bg-[#285f58] hover:text-white">About</a>
-                            <div className={`flex items-center text-2xl gap-4 text-[#285f58]`}>
+                        <div className={`h-screen bg-opacity-75 backdrop-blur-sm flex flex-col items-center gap-2 absolute top-full left-0 bg-white w-full text-[#285f58] text-sm border-t border-[#285f58] z-10`}>
+                            <a href="#" className="text-xl w-full text-center py-4 transform duration-300 hover:bg-[#285f58] hover:text-white">Home</a>
+                            <a href="#" className="text-xl w-full text-center py-4 transform duration-300 hover:bg-[#285f58] hover:text-white">Menu</a>
+                            <a href="#" className="text-xl w-full text-center py-4 transform duration-300 hover:bg-[#285f58] hover:text-white">Our Services</a>
+                            <a href="#" className="text-xl w-full text-center py-4 transform duration-300 hover:bg-[#285f58] hover:text-white">About</a>
+                            <div className={`py-4 w-full justify-center flex items-center text-4xl gap-4 text-[#285f58]`}>
                                 <AiFillInstagram className={`hover:scale-110 cursor-pointer transform duration-300 p-1 border hover:bg-gray-200 border-[#285f58] rounded-full`} />
                                 <AiFillFacebook className={`hover:scale-110 cursor-pointer transform duration-300 p-1 border hover:bg-gray-200 border-[#285f58] rounded-full`} />
                                 <AiOutlineTwitter className={`hover:scale-110 cursor-pointer transform duration-300 p-1 border hover:bg-gray-200 border-[#285f58] rounded-full`} />

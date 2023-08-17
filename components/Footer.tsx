@@ -15,7 +15,7 @@ const Footer = () => {
                     <path d="M0 100l48-12C96 76 192 28 288 23.5 384 19 480 57 576 57.5c96 .5 192-38.5 288-33C960 29 1056 79 1152 83.5 1248 88 1344 48 1392 28l48-20V0H0z" />
                 </svg>
             </div>
-            <div className={'flex flex-col lg:flex-row gap-32 justify-center items-center lg:pb-10 mx-2 lg:mx-32 border-b border-white'}>
+            <div className={'flex flex-col lg:flex-row gap-0 lg:gap-32 justify-center items-center pb-2 lg:pb-10 mx-2 lg:mx-32 border-b border-white'}>
                 <div className={'text-white font-semibold text-3xl lg:text-6xl lg:pt-32 z-10'}>
                     <div>
                         Enjoy Delicious Food
@@ -25,13 +25,13 @@ const Footer = () => {
                         <div>Authentic taste</div>
                     </div>
                 </div>
-                <div className={'flex items-center justify-center lg:pt-20'}>
+                <div className={'flex items-center justify-center pt-4 lg:pt-20'}>
                     <div className={'h-10 lg:mt-12 w-48 flex items-center justify-center p-2 bg-[#e8512a] shadow-md shadow-orange-800 hover:bg-white hover:text-[#e8512a] hover:font-bold transform duration-300 cursor-pointer text-white font-thin text-sm rounded-bl-xl rounded-tr-xl rounded-tl-sm rounded-br-sm'}>
                         Make an reservation
                     </div>
                 </div>
             </div>
-            <div className={'flex w-full px-32 justify-around'}>
+            <div className={'flex w-full px-2 lg:px-32 justify-around'}>
                 <div className={'flex-1 py-10 flex flex-col gap-6 text-white'}>
                     <div className={'items-center font-bold text-lg flex justify-normal'}>
                         Res<i className={'not-italic text-[#e8512a]'}>taur</i>ant
@@ -67,7 +67,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-white font-thin text-sm flex justify-end pr-10 py-5">
+            <div className="text-white font-thin text-sm flex justify-center lg:justify-end lg:pr-10 py-5">
                 <span className="mr-1">&copy; Copyright 2023.</span>
                 <span>All rights reserved</span>
             </div>

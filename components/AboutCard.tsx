@@ -4,7 +4,7 @@ import cardImage from '../images/heroImage1.png'
 
 const AboutCard = () => {
     return (
-        <div className={'cursor-pointer group h-96 w-full lg:w-72 bg-black rounded-3xl relative overflow-hidden'}>
+        <div className={'cursor-pointer group h-96 w-full sm:w-72 bg-black rounded-3xl relative overflow-hidden'}>
             <Image
                 src={cardImage}
                 alt="Card Image"

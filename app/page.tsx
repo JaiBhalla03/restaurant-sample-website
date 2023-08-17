@@ -11,7 +11,6 @@ import FeedBack from "@/components/FeedBack";
 export default function Home() {
   return (
     <main className="bg-[#285f58]">
-        {/*<Navbar/>*/}
         <Hero/>
         <About/>
         <Menu/>

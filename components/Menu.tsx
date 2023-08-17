@@ -37,7 +37,7 @@ const Menu = () => {
                 </div>
             </div>
             <MenuCardsSecond/>
-            <div className={'mx-48 text-center text-5xl flex flex-col gap-2 items-center justify-center font-semibold text-[#285f58]'}>
+            <div className={'mx-2 lg:mx-48 text-center text-3xl lg:text-5xl flex flex-col gap-2 items-center justify-center font-semibold text-[#285f58]'}>
                 <div className={'flex gap-2'}>
                     <div>We served</div>
                     <div className={'relative'}>
@@ -48,7 +48,7 @@ const Menu = () => {
                     </div>
                 </div>
                 <div>For Healthy Lifestyle</div>
-                <div className={'text-sm mt-6 mx-48'}>
+                <div className={'text-sm mt-6 mx-2 lg:mx-48'}>
                     Our food is made of the freshest ingredients and the result is a much better sushi with a fresh look and of course great taste guarantee.
                 </div>
             </div>
