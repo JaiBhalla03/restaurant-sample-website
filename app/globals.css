@@ -60,6 +60,18 @@
     .swiper {
         width: 100%; /* Set width to 100% for mobile screens */
     }
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: none;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: none;
+        border-radius: 0;
+    }
 }
 
 /**{*/
