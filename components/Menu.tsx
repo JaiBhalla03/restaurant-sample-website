@@ -19,7 +19,7 @@ const Menu = () => {
                 </div>
             </div>
             <MenuCards/>
-            <div className={'mx-2 lg:mx-48 text-center text-3xl lg:text-5xl flex flex-col gap-2 items-center justify-center font-semibold text-[#285f58]'}>
+            <div className={'mx-2 mt-10 lg:mx-48 text-center text-3xl lg:text-5xl flex flex-col gap-2 items-center justify-center font-semibold text-[#285f58]'}>
                 <div className={'flex gap-2'}>
                     <div className={'relative'}>
                         Choose The Taste

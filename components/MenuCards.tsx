@@ -42,7 +42,7 @@ const MenuCards = () => {
     };
     return (
         <div className={'h-screen pt-10 lg:pt-20 px-2 lg:px-10 lg:px-32'}>
-            <div className={'flex flex-col lg:flex-row justify-between px-2 sm:px-10 md:px-15 lg:px-20'}>
+            <div className={'flex flex-col lg:flex-row justify-between px-2 sm:px-10 md:px-15 lg:px-10'}>
                 <div className={'relative'}>
                     {
                         menuItem.map((item, index)=>(

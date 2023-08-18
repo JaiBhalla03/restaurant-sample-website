@@ -5,7 +5,7 @@ const FeedBack = () => {
     return (
         <div className={'bg-[#eee1d1]'}>
             <div className={'mx-2 lg:mx-48 text-center text-3xl lg:text-5xl flex flex-col gap-2 items-center justify-center font-semibold text-[#285f58]'}>
-                <div className={'flex flex-row lg:flex-col lg:flex-row gap-2'}>
+                <div className={'flex flex-col lg:flex-row gap-2'}>
                     <div>What Our</div>
                     <div className={'relative'}>
                         Happy Customers
