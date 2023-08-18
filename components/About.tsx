@@ -15,7 +15,7 @@ const About = () => {
                 </svg>
             </div>
             <div className={'mt-32 h-48 mx-2 lg:mx-32 lg:p-8 relative z-10'}>
-                <div className={'relative text-[#285f58] mx-10 lg:mx-20 text-4xl font-bold'}>
+                <div className={'relative text-[#285f58] mx-10 lg:mx-20 text-2xl lg:text-4xl font-bold'}>
                     <div className={'-top-8 -left-14 flex items-center justify-center absolute font-cursive-quote bg-[#f37761] text-[#eee1d1] flex justify-center items-center rounded-full px-4 pt-8 pb-4 h-20 w-20 text-5xl pt-4'}>
                         "
                     </div>
@@ -24,7 +24,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className={'mx-10 lg:mx-48 text-center mt-32 text-5xl flex flex-col items-center justify-center font-semibold text-[#285f58]'}>
+            <div className={'mx-2 lg:mx-48 text-center mt-10 lg:mt-32 text-3xl lg:text-5xl flex flex-col items-center justify-center font-semibold text-[#285f58]'}>
                 We create delicious Food <br/>
                 <div className={'flex gap-2'}>
                     <div className={'relative'}>

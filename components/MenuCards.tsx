@@ -42,7 +42,7 @@ const MenuCards = () => {
     };
     return (
         <div className={'h-screen pt-10 lg:pt-20 px-2 lg:px-10 lg:px-32'}>
-            <div className={'flex flex-col lg:flex-row justify-between px-20'}>
+            <div className={'flex flex-col lg:flex-row justify-between px-2 sm:px-10 md:px-15 lg:px-20'}>
                 <div className={'relative'}>
                     {
                         menuItem.map((item, index)=>(
@@ -56,7 +56,7 @@ const MenuCards = () => {
                         ))
                     }
                 </div>
-                <div className={'pt-64 lg:pt-0 flex flex-col gap-2 lg:gap-4 text-[#285f58]'}>
+                <div className={'pt-64 lg:pt-0 w-full lg:w-auto flex flex-col gap-2 lg:gap-4 text-[#285f58]'}>
                     {
                         menuItem.map((item, index)=>(
                             <div key={index} onClick={()=>handleClick(index)} className={`group hover:bg-[#e8512a] hover:text-white transform duration-300 cursor-pointer rounded-l-full ${activeCard === index ? 'bg-[#e8512a] text-white' : 'bg-[#d6c7b6] text-[#285f58]'}  w-full flex gap-2 p-1`}>

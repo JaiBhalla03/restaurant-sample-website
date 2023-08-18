@@ -37,7 +37,7 @@ const Menu = () => {
                 </div>
             </div>
             <MenuCardsSecond/>
-            <div className={'mx-2 lg:mx-48 text-center text-3xl lg:text-5xl flex flex-col gap-2 items-center justify-center font-semibold text-[#285f58]'}>
+            <div className={'mx-2 lg:mx-48 text-center text-3xl lg:text-5xl hidden lg:flex flex-col gap-2 items-center justify-center font-semibold text-[#285f58]'}>
                 <div className={'flex gap-2'}>
                     <div>We served</div>
                     <div className={'relative'}>
@@ -52,15 +52,15 @@ const Menu = () => {
                     Our food is made of the freshest ingredients and the result is a much better sushi with a fresh look and of course great taste guarantee.
                 </div>
             </div>
-            <div className={'relative flex justify-center items-center py-20 px-32 w-[80%] mx-auto'}>
-                <Image src={healthyImage} alt={''}/>
-                <div className={'absolute top-1/3 left-20 flex flex-col gap-4 w-48'}>
+            <div className={'relative hidden lg:flex justify-center items-center py-20 px-32 w-[80%] mx-auto'}>
+                <Image src={healthyImage} alt={''} className={''}/>
+                <div className={'absolute top-0 lg:top-1/3 left-20 flex flex-row lg:flex-col gap-4 w-48'}>
                     <div className={'flex flex-col gap-2'}>
-                        <div className={'text-6xl font-semibold text-[#285f58]'}>101+</div>
+                        <div className={'text-3xl lg:text-6xl font-semibold text-[#285f58]'}>101+</div>
                         <div className={'text-sm font-normal text-[#285f58]'}>Our food is made of freshest ingredients.</div>
                     </div>
                     <div className={'flex flex-col gap-2'}>
-                        <div className={'text-6xl font-semibold text-[#285f58]'}>120k+</div>
+                        <div className={'text-3xl lg:text-6xl font-semibold text-[#285f58]'}>120k+</div>
                         <div className={'text-sm font-normal text-[#285f58]'}>Our food is made of freshest ingredients and result are much better.</div>
                     </div>
                 </div>
